@@ -28,4 +28,13 @@ angular.module('main')
         })
     }
 
+    vm.checkAuth = function(){
+      // check if the user is authenticated
+      var fbusr = this.auth.$getAuth();
+
+      if(fbusr){
+        vm.isWorking = fbusr.uid;
+      }
+    }
+
   });

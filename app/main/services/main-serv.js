@@ -4,6 +4,8 @@ angular.module('main')
 
   $log.log('Hello from your Service: Main in module main');
 
+  
+
   // some initial data
   this.someData = {
     binding: 'Yes! Got that databinding working'
