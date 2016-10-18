@@ -1,5 +1,5 @@
 # Carbix
-This project was generated with Generator-M-Ionic v1.10.0. For more info visit the [repository](https://github.com/mwaylabs/generator-m-ionic) or check out the README below.
+This a GREAT project was generated with Generator-M-Ionic v1.10.0. For more info visit the [repository](https://github.com/mwaylabs/generator-m-ionic) or check out the README below.
 
 # Generator-M-Ionic v1.10.0
 
