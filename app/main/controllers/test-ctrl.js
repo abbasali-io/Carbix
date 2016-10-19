@@ -7,7 +7,7 @@ angular.module('main')
     var ref = firebase.database().ref();
     var auth = $firebaseAuth();
 
-    vm.isWorking = "yes its Working now";
+    vm.isWorking = 'yes its Working now';
 
     var x = $firebaseObject(ref);
 
@@ -15,14 +15,14 @@ angular.module('main')
 
     vm.signInWithGoogle = function () {
 
-      auth.$signInWithPopup("google")
+      auth.$signInWithPopup('google')
         .then(function (firebaseUser) {
           console.log(firebaseUser);
-          vm.isWorking = "signed in as :" + firebaseUser.uid;
+          vm.isWorking = 'signed in as :' + firebaseUser.uid;
         })
         .catch(function (error) {
-          console.log("Authentication Failed : " + error);
-        })
-    }
+          console.log('Authentication Failed : ' + error);
+        });
+    };
 
   });

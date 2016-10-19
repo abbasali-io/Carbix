@@ -5,20 +5,175 @@ in ionic's _variables.scss file.
 For example, you might change some of the default colors:
 */
 
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #4a87ee !default;
-$calm:                            #43cee6 !default;
-$balanced:                        #66cc33 !default;
-$energized:                       #f0b840 !default;
-$assertive:                       #ef4e3a !default;
-$royal:                           #8a6de9 !default;
-$dark:                            #444 !default;
+    $light:                           #fff !default;
+    $stable:                          #f8f8f8 !default;
+    $positive:                        #4a87ee !default;
+    $calm:                            #43cee6 !default;
+    $balanced:                        #66cc33 !default;
+    $energized:                       #f0b840 !default;
+    $assertive:                       #ef4e3a !default;
+    $royal:                           #8a6de9 !default;
+    $dark:                            #444 !default;
+
+//colors variable section
+    $color_white: white;
+    $color_gray: gray;
+    $color_alto: #dbdbdb;
+    $color_black: black;
+    $color_mercury: #e5e5e5;
+    $color_black_14: rgba(0, 0, 0, 0.14);
+    $color_black_12: rgba(0, 0, 0, 0.12);
+    $color_black_20: rgba(0, 0, 0, 0.2);
+    $color_black_084: rgba(0, 0, 0, 0.084);
+    $color_black_098: rgba(0, 0, 0, 0.098);
+    $color_black_haze_approx: #f6f6f6;
+    $color_angular: #E15258;
+    $color_ionic: #3079AB;
+    $color_material: #E59A13;
+    $color_ios: #45AFA8;
+  // facebook
+    $color_facebook: #3c5c99;
+  // google
+    $color_google_plus: #d73d32;
+    $color_instagram: #517fa4;
+    $color_foursquare: #f94777;
+    $color_dropbox: #017ee6;
+    $color_wordoress: #0087BE;
+    $color_romance_approx: #fefefe;
+    $color_alabaster: #fafafa;
+    $color_gondola_40_approx: rgba(34, 25, 25, 0.4);
+    $color_celeste_approx: #ccc;
+    $color_mine_shaft_approx: #333;
+    $color_carnation_approx: #ff5252;
+    $color_chenin_approx: #e3cf7a;
+    $color_red_orange_approx: #f44336;
+    $color_border_under_line: rgba(0, 0, 0, 0.12);
+    $color_md_tabs_border: #E1E1E1;
+    $color_md-whiteframe: #fff;
+    $color_border_menu_dashboard: rgba(225, 225, 225, 0.69);
+    $color_news_header: #2882D8;
+// end color variable section
 
 // The path for our ionicons font files, relative to the built & temporary main.css
-$ionicons-font-path: "../assets/fonts" !default;
+    $ionicons-font-path: "../assets/fonts" !default;
+
+// urls variable section 
+    $url_background_login_01: '../templates/img/slide_01.png';
+    $url_background_login_02: '../templates/img/slide_02.png';
+    $url_background_login_03: '../templates/img/slide_03.png';
+// end urls variable section
+
+//login section
+    #login-section {
+        height: 90%;
+    //slider section
+        .slider {
+            height: 90%;
+        }
+        .slider-slide {
+            padding-top: 80px;
+            text-align: center;
+
+            font-weight: 500;
+        }
+        .slider-pager {
+            margin-bottom: 0px !important;
+        }
+        .slider-slide {
+            padding-top: 0;
+        }
+        .icon.ion-record {
+            color: $color_gray;
+            font-size: 8px;
+        }
+        span {
+            margin: 0;
+        }
+        img {
+            width: 100%;
+        }
+        .slide-01 {
+            background: url($url_background_login_01);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            .login-footer-content {
+                bottom: 20px;
+                position: fixed;
+                padding: 16px 2px 10px 2px;
+                div.col-50 {
+                    a {
+                    width: 80% !important;
+                    height: 30px;
+                    }
+                    .left {
+                    margin-right: -20px;
+                    }
+                    .right {
+                    margin-left: -14px;
+                    }
+                }
+            }
+        }
+        .slide-02 {
+            background: url($url_background_login_02);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .slide-03 {
+            background: url($url_background_login_03);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    //end slider section
+    }
+// end login section
+
+// box shadow
+    .card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    }
+
+    .card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .card-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .card-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .card-4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .card-5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+// end box shadow
+
+// custom buttons
+  // google
+    button.button-google {
+        background-color: $color_google_plus;
+        color: $color_white;
+    }
+  // facebook
+    button.button-facebook {
+        background-color: $color_facebook;
+        color: $color_white;
+    }
+// end custom buttons
 
 // Include all of Ionic
-@import "../../bower_components/ionic/scss/ionic";
+    @import "../../bower_components/ionic/scss/ionic";
 
 
