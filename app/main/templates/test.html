@@ -11,7 +11,8 @@
 				Yeiiii!
 			</ion-item>
 		</ion-list>
-		<p>its working!! : {{vm.isWorking}}</p>
+		<input type="text" ng-model="vm.isWorking.Color" ng-change="vm.isWorking.$save()"></input>
+		<p>its working!! :  {{vm.isWorking.Color}}</p>
 		<button ng-click="vm.signInWithGoogle()">
 Login with Google
 </button>

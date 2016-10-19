@@ -5,13 +5,16 @@ angular.module('main')
     var vm = this;
 
     var ref = firebase.database().ref();
+    var settingsRef = firebase.database().ref().child('Settings');
     var auth = $firebaseAuth();
 
-    vm.isWorking = "yes its Working now";
+    vm.isWorking = "its Working locally";
 
-    var x = $firebaseObject(ref);
+    var obj = $firebaseObject(settingsRef);
+    console.log(obj)
+    // obj.$bindTo($scope, vm.isWorking)
 
-    vm.isWorking = x;
+     vm.isWorking = obj;
 
     vm.signInWithGoogle = function () {
 
