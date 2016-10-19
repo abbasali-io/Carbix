@@ -27,6 +27,15 @@ angular.module('main', [
           }
         }
       })
+      .state('main.logout', {
+        url: '/logout',
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/logout.html',
+            controller: 'LogoutCtrl as vm'
+          }
+        }
+      })
       .state('main.list', {
         url: '/list',
         views: {
