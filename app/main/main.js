@@ -36,6 +36,15 @@ angular.module('main', [
           }
         }
       })
+      .state('main.searchCar', {
+        url: '/searchCar',
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/search-car.html',
+            controller: 'SearchCarCtrl as vm'
+          }
+        }
+      })
       .state('main.list', {
         url: '/list',
         views: {
