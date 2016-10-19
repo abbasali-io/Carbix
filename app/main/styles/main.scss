@@ -63,7 +63,7 @@ For example, you might change some of the default colors:
     $url_background_login_03: '../templates/img/slide_03.png';
 // end urls variable section
 
-//login section
+// login section
     #login-section {
         height: 90%;
     //slider section
@@ -127,6 +127,18 @@ For example, you might change some of the default colors:
     //end slider section
     }
 // end login section
+
+// list layout
+    .list-50 {
+        float: left;
+        width: 40%;
+        text-align: center;
+        margin: 10px;
+    }
+    div.card.no-margin {
+        margin: 0px;
+    }
+// end list layout 
 
 // toolbar 
     .toolbar {

@@ -1,10 +1,12 @@
 <ion-view view-title="{{vm.title}}">
-    <ion-content scroll="false">
+    <ion-content scroll="true">
     <!--toolbar-->
         <div class="toolbar">
+        <!--toolbar-title-->
             <div class="toolbar-title">
                 Search Car 
             </div>
+        <!--toolbar-footer-->
             <!--<div class="row toolbar-footer">
                 <div class="col-50">
                     My Favourites
@@ -15,11 +17,18 @@
             </div>-->
         </div>
     <!--search bar-->
-
-        <!--<div class="padding">
-            <div class="list card">
-
+    <!--list of search result-->
+        <div class="padding">
+            <div class="col">
+                <div class="card no-margin padding">
+                    <div ng-repeat="result in results">
+                        <div class="list-50 card-4">
+                            <h6>{{result.make}}</h6>
+                            <p>{{result.model}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>-->
+        </div>
     </ion-content>
 </ion-view>
