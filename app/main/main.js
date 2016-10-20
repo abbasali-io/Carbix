@@ -18,6 +18,24 @@ angular.module('main', [
       templateUrl: 'main/templates/menu.html',
       controller: 'MenuCtrl as menu'
     })
+      .state('main.login', {
+        url: '/login',
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/login.html',
+            controller: 'LoginCtrl as vm'
+          }
+        }
+      })
+      .state('main.logout', {
+        url: '/logout',
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/logout.html',
+            controller: 'LogoutCtrl as vm'
+          }
+        }
+      })
       .state('main.list', {
         url: '/list',
         views: {
