@@ -12,9 +12,19 @@
 			</ion-item>
 		</ion-list>
 		<input type="text" ng-model="vm.isWorking.Color" ng-change="vm.isWorking.$save()"></input>
-		<p>its working!! :  {{vm.isWorking.Color}}</p>
-		<button ng-click="vm.signInWithGoogle()">
-Login with Google
-</button>
+		<p>its working!! : {{vm.isWorking.Color}}</p>
+		<button ng-click="vm.signInWithGoogle()">Login with Google</button>
+		<button ng-click="vm.logOut()">LogOut</button>
+	<p>Is Logged In? : <b>{{vm.isLoggedIn}}</b></p>
+		<p>DisplayName : {{vm.user.displayName}}</p>
+		<p>Email : {{vm.user.email}}</p>
+		<p>Email Verified? : {{vm.user.emailVerified}}</p>
+		<p>photoUrl : {{vm.user.photoURL}}</p>
+		<p>provider : {{vm.credential.provider}}</p>
+		<p>access token : {{vm.credential.accessToken}}</p>
+		<p>uid -main : {{vm.user.uid}}</p>
+		<p>uid - provider : {{vm.user.providerData[0].uid}}
+
+
 	</ion-content>
 </ion-view>

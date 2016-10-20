@@ -6,6 +6,10 @@ angular.module('main', [
   'firebase'
   // TODO: load other modules selected during generation
 ])
+.constant('refs', {
+  settings: '/Settings',
+  users: '/Users'
+})
 .config(function ($stateProvider, $urlRouterProvider) {
 
   // ROUTING with ui.router
