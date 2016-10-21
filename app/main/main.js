@@ -49,6 +49,15 @@ angular.module('main', [
           }
         }
       })
+      .state('main.addCar', {
+        url: '/addCar',
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/add-car.html',
+            controller: 'AddCarCtrl as vm'
+          }
+        }
+      })
       .state('main.list', {
         url: '/list',
         views: {
