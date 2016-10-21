@@ -1,16 +1,60 @@
-<ion-view view-title="main module">
-  <!-- do you want padding? -->
-  <ion-content class="padding">
-
-    <!-- content goes here -->
-    <ion-list>
-      <ion-item class="item item-divider">
-        This is your addCar template!
-      </ion-item>
-      <ion-item class="item item-icon">
-        Yeiiii!
-      </ion-item>
-    </ion-list>
-
-  </ion-content>
+<ion-view view-title="{{vm.title}}">
+    <!--toolbar-->
+        <div class="toolbar">
+        <!--toolbar-title-->
+            <div class="toolbar-title">
+                Add Car 
+            </div>
+        <!--toolbar-footer-->
+            <!--<div class="row toolbar-footer">
+                <div class="col-50">
+                    My Favourites
+                </div>
+                <div class="col-50">
+                    Default Search
+                </div>
+            </div>-->
+        </div>
+    <ion-content class="has-toolbar">
+    <!--tabs-->
+        <ion-tabs class="tabs-positive tabs-icon-top">
+            <ion-tab 
+            title="Details" 
+            icon-on="ion-model-s" 
+            icon-off="ion-model-s">
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <div>
+                    <label>alskdfjsl;adkfjas</label>
+                    tab 1
+                </div>
+            </ion-tab>
+            <ion-tab 
+            title="About" 
+            icon-on="ion-pricetags" 
+            icon-off="ion-pricetags">
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <div>
+                    tab 2
+                </div>
+            </ion-tab>
+            <ion-tab 
+            title="Settings" 
+            icon-on="ion-images" 
+            icon-off="ion-images">
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <div>
+                    tab 3
+                </div>
+            </ion-tab>
+        </ion-tabs>
+    </ion-content>
 </ion-view>

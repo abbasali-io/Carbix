@@ -1,0 +1,63 @@
+<ion-view view-title="{{vm.title}}">
+    <!--<ion-content>-->
+    <!--toolbar-->
+        <div class="toolbar">
+        <!--toolbar-title-->
+            <div class="toolbar-title">
+                Add Car 
+            </div>
+        <!--toolbar-footer-->
+            <!--<div class="row toolbar-footer">
+                <div class="col-50">
+                    My Favourites
+                </div>
+                <div class="col-50">
+                    Default Search
+                </div>
+            </div>-->
+        </div>
+    <!--tabs-->
+        <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+            <div class="tabs tabs-icon-top">
+                <a class="tab-item active" href="#/main/addCarDetails">
+                    <i class="icon ion-model-s"></i>
+                    Details
+                </a>
+                <a class="tab-item" href="#/main/addCarPricing">
+                    <i class="icon ion-pricetags"></i>
+                    Pricing
+                </a>
+                <a class="tab-item" href="#/main/addCarPhotos">
+                    <i class="icon ion-images"></i>
+                    Photos
+                </a>
+            </div>
+        </div>
+
+        <ion-tabs class="tabs-positive tabs-icon-top">
+            <ion-tab 
+            title="Details" 
+            icon-on="ion-model-s" 
+            icon-off="ion-model-s"
+            href="#/main/addCarDetails">
+                <ion-nav-view name="tab-details"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab 
+            title="About" 
+            icon-on="ion-pricetags" 
+            icon-off="ion-pricetags"
+            href="#/main/addCarPricing">
+                <ion-nav-view name="tab-details"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab 
+            title="Settings" 
+            icon-on="ion-images" 
+            icon-off="ion-images"
+            href="#/main/addCarPhotos">
+                <ion-nav-view name="tab-details"></ion-nav-view>
+            </ion-tab>
+      </ion-tabs>
+    <!--</ion-content>-->
+</ion-view>

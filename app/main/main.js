@@ -13,15 +13,15 @@ angular.module('main', [
 .config(function ($stateProvider, $urlRouterProvider) {
 
   // ROUTING with ui.router
-  $urlRouterProvider.otherwise('/main/list');
+  $urlRouterProvider.otherwise('/main/login');
   $stateProvider
-    // this state is placed in the <ion-nav-view> in the index.html
-    .state('main', {
-      url: '/main',
-      abstract: true,
-      templateUrl: 'main/templates/menu.html',
-      controller: 'MenuCtrl as menu'
-    })
+  // this state is placed in the <ion-nav-view> in the index.html
+      .state('main', {
+        url: '/main',
+        abstract: true,
+        templateUrl: 'main/templates/menu.html',
+        controller: 'MenuCtrl as menu'
+      })
       .state('main.login', {
         url: '/login',
         views: {
@@ -55,6 +55,33 @@ angular.module('main', [
           'pageContent': {
             templateUrl: 'main/templates/add-car.html',
             controller: 'AddCarCtrl as vm'
+          }
+        }
+      })
+      .state('main.addCarDetails', {
+        url: '/addCarDetails',
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/add-car-details.html',
+            controller: 'AddCarDetailsCtrl as vm'
+          }
+        }
+      })
+      .state('main.addCarPricing', {
+        url: '/addCarPricing',
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/add-car-pricing.html',
+            controller: 'AddCarPricingCtrl as vm'
+          }
+        }
+      })
+      .state('main.addCarPhotos', {
+        url: '/addCarPhotos',
+        views: {
+          'pageContent': {
+            templateUrl: 'main/templates/add-car-photos.html',
+            controller: 'AddCarPhotosCtrl as vm'
           }
         }
       })

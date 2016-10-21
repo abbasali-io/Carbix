@@ -143,7 +143,11 @@ For example, you might change some of the default colors:
     }
 // end list layout 
 
-// toolbar 
+// toolbar
+    ion-content.has-toolbar {
+        position: absolute;
+        top: 148px;
+    }
     .toolbar {
         box-sizing: border-box;
         display: -webkit-flex;
@@ -153,11 +157,11 @@ For example, you might change some of the default colors:
             -ms-flex-direction: column;
                 flex-direction: column;
         position: relative;
+        top: -1px;
         z-index: 2;
         font-size: 20px;
         height: 150px;
         width: 100%; 
-        text-align: center;
         color: white;
         background-color: $positive;
         border-style: hidden;
@@ -165,18 +169,23 @@ For example, you might change some of the default colors:
     .toolbar-title {
         color: white;
         font-size: 30px;
+        text-align: center;
+        width: 100%;
         height: 30px;
-        margin-top: 60px;
+        position: absolute;
+        top: 60px;
     }
     .row.toolbar-footer {
         position: absolute;
         bottom: 0px;
         font-size: 16px;
+        text-align: center;
         color: white;
         // border-bottom-style: solid;
         // border-bottom-color: red;
         // border-bottom-width: 1px;
     }
+    
 // end toolbar 
 
 // card & box shadow 
